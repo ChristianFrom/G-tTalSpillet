@@ -18,11 +18,11 @@ namespace GætTalSpillet
         public void Start()
         {
 
-            plade1();
-            plade2();
-            plade3();
-            plade4();
-            plade5();
+            plade1_();
+            plade2_();
+            plade3_();
+            plade4_();
+            plade5_();
 
 
             resultat();
@@ -34,11 +34,13 @@ namespace GætTalSpillet
             Svar = Console.ReadLine();
             if (Svar == "Ja")
             {
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("\t\t\t\t\tTak for spillet! Det var en fornøjelse. :)");
             }
 
             if (Svar == "ja")
             {
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("\t\t\t\t\tTak for spillet! Det var en fornøjelse. :)");
             }
 
@@ -53,7 +55,7 @@ namespace GætTalSpillet
             }
         }
 
-        private void plade5()
+        private void plade5_()
         {
             Console.WriteLine("\t\t\t\t\t+--------------------------------+" + "\n" +
                               "\t\t\t\t\t|  1        3        5        7  |" + "\n" +
@@ -74,7 +76,7 @@ namespace GætTalSpillet
             }
         }
 
-        private void plade4()
+        private void plade4_()
         {
             Console.WriteLine("\t\t\t\t\t+--------------------------------+" + "\n" +
                               "\t\t\t\t\t|  2        3        6        7  |" + "\n" +
@@ -95,7 +97,7 @@ namespace GætTalSpillet
             }
         }
 
-        private void plade3()
+        private void plade3_()
         {
             Console.WriteLine("\t\t\t\t\t+--------------------------------+" + "\n" +
                               "\t\t\t\t\t|  4        5        6        7  |" + "\n" +
@@ -116,7 +118,7 @@ namespace GætTalSpillet
             }
         }
 
-        private void plade2()
+        private void plade2_()
         {
             Console.WriteLine("\t\t\t\t\t+--------------------------------+" + "\n" +
                               "\t\t\t\t\t|  8        9        10       11 |" + "\n" +
@@ -137,7 +139,7 @@ namespace GætTalSpillet
             }
         }
 
-        private void plade1()
+        private void plade1_()
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\n");
